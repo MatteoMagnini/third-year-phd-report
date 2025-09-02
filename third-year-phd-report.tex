@@ -13,7 +13,7 @@ maxnames=10,
 url=false
 ]{biblatex}
 
-\usepackage{second-year-phd-report}
+\usepackage{third-year-phd-report}
 \addbibresource{references.bib}
 
 \begin{document}
@@ -31,9 +31,9 @@ url=false
 \end{center}
 
 \begin{center}
-	{\LARGE{Symbolic Knowledge Injection \& Extraction for Autonomous Learning}} \\
+	{\LARGE{Symbolic Knowledge Injection \& Extraction\\ for Autonomous Learning}} \\
 	\vspace{4mm}
-	{\large{PhD Year II -- Report}} 
+	{\large{PhD Year III -- Report}}
 	\vspace{4mm}
 \end{center}
 \vspace{8mm}
@@ -68,62 +68,80 @@ Prof. Giovanni Pau}
 	}}
 \section{Research}\label{sec:research}
 %
-In the last decades \ac{SKE} and \ac{SKI} have been widely studied in the literature.
+In the last decades \gls{SKE} and \gls{SKI} have been widely studied in the literature.
 %
-\ac{SKE} techniques aim at extracting symbolic knowledge -- e.g., logic rules -- from sub-symbolic predictors -- mostly \acp{NN} -- to improve their interpretability and trustworthiness.
+\gls{SKE} techniques aim at extracting symbolic knowledge -- e.g., logic rules -- from sub-symbolic predictors -- mostly \glspl{NN} -- to improve their interpretability and trustworthiness.
 %
-Conversely, \ac{SKI} methods inject symbolic knowledge into sub-symbolic predictors in order to improve their performance or their \ac{QoS}~\cite{DBLP:journals/aamas/AgiolloRMCO23}.
+Conversely, \gls{SKI} methods inject symbolic knowledge into sub-symbolic predictors in order to improve their performance or their \gls{QoS}~\cite{DBLP:journals/aamas/AgiolloRMCO23}.
 
-Recently, with the explosive success of \acp{LLM}, both \ac{SKE} and \ac{SKI} evolved to deal with these models.
-%
-In particular, when \ac{SKE} is applied to \acp{LLM}, the goal is to extract symbolic knowledge from the model concerning a specific task -- e.g., populating an ontology -- or domain -- e.g., extracting classification rules for a specific dataset.
-%
-Instead, when \ac{SKI} is applied to \acp{LLM}, the goal provides the model with prior (and possibly symbolic) knowledge to improve its performance.
-%
-In this respect, the two most common approaches are \emph{fine-tuning} and \ac{RAG}.
 
-With these premises, the research activities of my PhD were first focused on the development of new \ac{SKE}/\ac{SKI} methods~\cite{DBLP:journals/logcom/MagniniCO23,DBLP:conf/woa/MagniniCO22,DBLP:conf/cilc/MagniniCO22}, tools~\cite{DBLP:conf/atal/MagniniCO22}\footnote{\url{https://github.com/psykei/psyki-python}}\footnote{\url{https://github.com/psykei/psyke-python}} and applications~\cite{DBLP:journals/cmpb/MagniniCCAO23,DBLP:conf/extraamas/CiattoMBAO23}.
+Recently, with the explosive success of \glspl{LLM}, both \gls{SKE} and \gls{SKI} evolved to deal with these models.
 %
-Then, the research activities moved towards \ac{LLM} applications and on the incorporation of \ac{SKE}/\ac{SKI} into \acp{LLM}.
+In particular, when \gls{SKE} is applied to \glspl{LLM}, the goal is to extract symbolic knowledge from the model concerning a specific task -- e.g., populating an ontology -- or domain -- e.g., extracting classification rules for a specific dataset.
 %
-In the context of healthcare, I have been working both on \ac{SKI}~\cite{DBLP:conf/hc/Magnini24} and on the development of a chatbot for patients with hypertension\footnote{\url{https://github.com/MatteoMagnini/hyperTensionBot}}.
+Instead, when \gls{SKI} is applied to \glspl{LLM}, the goal provides the model with prior (and possibly symbolic) knowledge to improve its performance.
 %
-This work has already led to a publication~\cite{DBLP:conf/percom/MontagnaAFPKUM24} and a submission~\cite{DBLP:conf/hc/Aguzzi24}.
-%
-Concerning the extraction of knowledge from \acp{LLM}, I have been working on the development of a tool for the learning of ontologies from \ac{LLM}~\cite{DBLP:conf/dlog/MagniniOS24}\footnote{\url{https://github.com/MatteoMagnini/ExactLearner}}.
-%
-On the same topic, I have a paper submitted~\cite{DBLP:journals/kbs/CiattoKB24}.
+In this respect, the two most common approaches are \emph{fine-tuning} and \gls{RAG}.
 
-In the rest of this report, I will provide a brief overview of the activities I have carried out during the second year of my PhD\@.
+
+With these premises, the research activities of my PhD were first focused on the development of new \gls{SKE}/\gls{SKI} methods~\cite{DBLP:journals/logcom/MagniniCO23,DBLP:conf/woa/MagniniCO22,DBLP:conf/cilc/MagniniCO22}, tools~\cite{DBLP:conf/atal/MagniniCO22}\footnote{\url{https://github.com/psykei/psyki-python}, \url{https://github.com/psykei/psyke-python}} and applications~\cite{DBLP:journals/cmpb/MagniniCCAO23,DBLP:conf/extraamas/CiattoMBAO23}.
 %
-in particular, I have been working on several tasks, including research publications, teaching, visiting, participation in conferences, supervision of graduating students, and PhD courses.
+Then, the research activities moved towards \gls{LLM} applications and on the incorporation of \gls{SKE}/\gls{SKI} into \glspl{LLM}.
+%
+In the context of healthcare, I have been working both on more traditional \gls{SKI} approaches~\cite{DBLP:conf/hc/Magnini24} and on the development of an \gls{LLM}-based chatbot for patients with hypertension\footnote{\url{https://github.com/MatteoMagnini/hyperTensionBot}}~\cite{DBLP:conf/percom/MontagnaAFPKUM24}.
+%
+Then, I explored different \gls{LLM}-based solutions in the healthcare domain.
+
+
+Ultimately, I contributed to the development of systems that can autonomously learn exploiting both symbolic and sub-symbolic knowledge representation.
+%
+One work on this topic consists in the development of a tool that populate an ontology with individuals starting from its axioms~\cite{DBLP:journals/kbs/CiattoAMO25}.
+%
+Independently from that work, I worked on the development of a tool for the learning of ontologies from \gls{LLM}~\cite{DBLP:conf/dlog/MagniniOS24}\footnote{\url{https://github.com/MatteoMagnini/ExactLearner-LLM}}.
+%
+The system is a teacher-learner architecture, where the teacher is a \gls{LLM} and the learner is an active learning algorithm for ontologies~\cite{Magnini2025ActivelyLearning}.
+%
+
+In the rest of this report, I will provide a brief overview of the activities I have carried out during the third year of my PhD\@.
+%
+In particular, I have been working on several tasks, including research publications, teaching, visiting, participation in conferences, supervision of graduating students.
 
 
 \section{Period Abroad}\label{sec:period-abroad}
-I have moved to Norway for a period of 3 months, from the 5th of March to the 8th of June 2024.
+%
+In the course of the second here of my PhD, I moved to Norway for a period of 3 months, from the 5th of March to the 8th of June 2024.
 %
 I was hosted by Prof.~Ana Ozaki at the University of Oslo, where I had the opportunity to work with her along with her research group.
 %
-During this period, I have been working on the development of a new tool for the learning of ontologies by means of \ac{LLM}.
+During this period, I have been working on the development of a new tool for the learning of ontologies by means of \gls{LLM}.
 %
 In particular, the work started from the ExactLearner tool\footnote{\url{https://github.com/ExactLearner/ExactLearner}}, and it has been extended to support the learning of ontologies from text\footnote{\url{https://github.com/MatteoMagnini/ExactLearner}}.
 %
-One paper has been already published~\cite{DBLP:conf/dlog/MagniniOS24}, and a more comprehensive work is currently undergoing.
+One paper has been already published~\cite{DBLP:conf/dlog/MagniniOS24}.
+%
+Right now, the full paper partially based on that preliminary work has been accepted at ECAI 2025~\cite{DBLP:conf/dlog/MagniniOS24}.
+%
+The collaboration with Prof.~Ozaki is still ongoing, and we are working on the extension of the tool.
 
 
 \section{Scientific Activities}\label{sec:scientific-activities}
 %
-Here a summary of the scientific activities I have carried out during the second year of my PhD\@.
-
-\subsection{Organization of International Conferences}\label{subsec:organization-of-international-conferences}
-
-\begin{itemize}
-	\item \href{https://dl2024.w.uib.no/organization/}{The 37th International Workshop on Description Logics (DL 2024)}
-	\\Local organization team member.
-\end{itemize}
+Here a summary of the scientific activities I have carried out during the third year of my PhD\@.
 
 \subsection{Program Committee Member}\label{subsec:program-committee-member}
 
+\begin{itemize}
+	\item \href{https://aaai.org/conference/aaai/aaai-25/}{the 39th Annual AAAI Conference on Artificial Intelligence (AAAI 2025)}
+	%
+	\item \href{https://extraamas.ehealth.hevs.ch/index.html}{the 7th International Workshop on EXplainable and TRAnsparent AI and Multi-Agent Systems (EXTRAAMAS 2025)}
+	%
+	\item \href{https://ansya-workshop.github.io/2025}{the 1st International Workshop on Advanced Neuro-Symbolic Applications (ANSYA 2025)}
+	%
+	\item \href{https://haic-workshop.github.io/haic.github.io}{the 1st International Workshop on Human-AI Collaborative Systems (HAIC 2025)}
+\end{itemize}
+%
+During the first and second year of my PhD, I have been a program committee member for the following conferences:
+%
 \begin{itemize}
 	\item \href{https://fairnesscluster.github.io/aimmes23.github.io/index.html}{The 1st Workshop on AI bias: Measurements, Mitigation, Explanation Strategies (AIMMES 2024)}
 	%
@@ -132,11 +150,7 @@ Here a summary of the scientific activities I have carried out during the second
 	\item \href{https://aequitas-aod.github.io/aequitas-ecai24.github.io/pc-member.html}{Second AEQUITAS on Fairness and Bias in AI (AEQUITAS 2024)}
 	%
 	\item \href{https://aaai.org/conference/aaai/aaai-25/}{The 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2025)}
-\end{itemize}
-%
-During the first year of my PhD, I have been a program committee member for the following conferences:
-%
-\begin{itemize}
+	%
 	\item \href{https://extraamas.ehealth.hevs.ch/archive.html#organizations-2022}{The 4th International Workshop on EXplainable and TRAnsparent AI and Multi-Agent Systems: Fourth International Workshop (EXTRAAMAS 2022)}
 	%
 	\item \href{https://apice.unibo.it/xwiki/bin/view/Event/Aaai2023}{The 37th Annual AAAI Conference on Artificial Intelligence (AAAI 2023)}
@@ -144,10 +158,31 @@ During the first year of my PhD, I have been a program committee member for the 
 	\item \href{https://apice.unibo.it/xwiki/bin/view/Event/Prima2023}{The 5th International Workshop on EXplainable and TRAnsparent AI and Multi-Agent Systems: Fourth International Workshop (EXTRAAMAS 2023)}
 	%
 	\item \href{https://web.archive.org/web/20240225110652/https://www.stai.uk/stai-23-iclp}{The Safe and Trustworthy AI Workshop (STAI 2023)}
-	\end{itemize}
+\end{itemize}
+
+During the second here of the PhD I have been local organization team member for \href{https://dl2024.w.uib.no/organization/}{The 37th International Workshop on Description Logics (DL 2024)}.
+
 
 \subsection{Reviewing for International Journals}\label{subsec:reviewing-for-international-journals}
 
+In this third year of my PhD, I have been reviewing for the following international journals:
+%
+\begin{itemize}
+	\item \href{https://www.jair.org/index.php/jair/index}{Journal of Artificial Intelligence Research (ISSN: 1076-9757)}, 2025
+	%
+	\item \href{https://link.springer.com/journal/10742}{Health Services and Outcomes Research Methodology (ISSN: 1387-3741)}, 2025
+	%
+	\item \href{https://link.springer.com/journal/10916}{Journal of Medical Systems (ISSN: 1573-689X)}, 2025
+	%
+	\item \href{https://journals.sagepub.com/home/INA}{Intelligenza Artificiale (ISSN: 1724-8035)}, 2025
+	%
+	\item \href{https://link.springer.com/journal/10462}{Artificial Intelligence Review (ISSN: 1573-7462)}, 2025
+	%
+	\item \href{https://dl.acm.org/journal/csur}{ACM Computing Surveys (ISSN: 0360-0300)}, 2025
+\end{itemize}
+
+Previously, I have been reviewing for the following international journals:
+%
 \begin{itemize}
 	\item \href{https://link.springer.com/journal/10458}{Autonomous Agents and Multi-Agent Systems (ISSN: 1387-2532)}, 2023
 	%
@@ -160,21 +195,9 @@ During the first year of my PhD, I have been a program committee member for the 
 
 \subsection{Talks}\label{subsec:talks}
 
-During the second year of my PhD, I have given the following talks:
-
-\begin{itemize}
-	\item 1st Workshop on AI bias: Measurements, Mitigation, Explanation Strategies (AIMMES 2024)
-	\\\href{https://apice.unibo.it/xwiki/bin/view/Talk/IntersectionalityAimmes2024}{Mitigating Intersectional Fairness: a Practical Approach with FaUCI}
-	%
-	\item 37th International Workshop on Description Logics (DL 2024)
-	\\\href{https://dl2024.w.uib.no/overview/}{Active Learning Ontologies from LLMS: first results}
-	%
-	\item 2nd AEQUITAS Workshop on Fairness and Bias in AI (AEQUITAS 2024)
-	\\\href{https://aequitas-aod.github.io/aequitas-ecai24.github.io/}{Enforcing Fairness via Constraint Injection with FaUCI}
-	\\(This will be presented the 20th of October 2024)
-\end{itemize}
+I have presented my research work in several national and international conferences, workshops, and schools.
 %
-Previous talks are the following:
+Here a comprehensive list of the talks I have given during my PhD:
 %
 \begin{itemize}
 	\item 37th Italian Conference on Computational Logic (CILC 2022)
@@ -198,16 +221,35 @@ Previous talks are the following:
 	%
 	\item Doctoral Consortium of the 20th International Conference on Principles of Knowledge Representation and Reasoning (KR 2023)
 	\\\href{https://apice.unibo.it/xwiki/bin/view/Talk/SymbolicTransferLearning}{Symbolic Transfer Learning through Knowledge Manipulation Methods}
+	%
+	\item 1st Workshop on AI bias: Measurements, Mitigation, Explanation Strategies (AIMMES 2024)
+	\\\href{https://apice.unibo.it/xwiki/bin/view/Talk/IntersectionalityAimmes2024}{Mitigating Intersectional Fairness: a Practical Approach with FaUCI}
+	%
+	\item 37th International Workshop on Description Logics (DL 2024)
+	\\\href{https://dl2024.w.uib.no/overview/}{Active Learning Ontologies from LLMS: first results}
+	%
+	\item 2nd AEQUITAS Workshop on Fairness and Bias in AI (AEQUITAS 2024)
+	\\\href{https://aequitas-aod.github.io/aequitas-ecai24.github.io/}{Enforcing Fairness via Constraint Injection with FaUCI}
+	\\(This will be presented the 20th of October 2024)
+	%
+	\item Mini-School @ 26th Workshop From Objects to Agents (WOA 2025)
+	\\\href{https://sites.google.com/view/woa2025/mini-school?}{Symbolic Knowledge Extraction and Injection: Theory and Methods}
 \end{itemize}
 
 
 \section{Teaching}\label{sec:teaching}
 %
-During the second year of my PhD, I have been a teaching assistant for the following courses:
+During the third year of my PhD, I have been a teaching assistant for the following courses:
 %
 \begin{itemize}
+	\item \item \textbf{Teaching assistant for the course ``Fondamenti di Informatica'' }
+	\\\hfill \textbf{Feb., 2024 $\rightarrow$ Sept., 2025}
+	\\School of Engineering and Architecture (35 hours), University of Bologna, Italy
+	\\Computer architecture, representation of information, algorithms and data structures, C programming language.
+	\\Course Info: \url{https://virtuale.unibo.it/course/view.php?id=63744}
+	%
 	\item \textbf{Teaching assistant for the course ``Distributed Systems'' }
-	\\\hfill \textbf{Sept., 2024 $\rightarrow$ Now}
+	\\\hfill \textbf{Sept., 2024 $\rightarrow$ Sept., 2025}
 	\\School of Engineering and Architecture (24 hours), University of Bologna, Italy
 	\\Asynchronous programming, distributed principles and architectures, consensus algorithms, ReSTfull web-services, containers, agent-based technologies and middlewares.
 	\\Course Info: \url{https://apice.unibo.it/xwiki/bin/view/Courses/Ds2425}
@@ -255,20 +297,25 @@ Previously, I have been a teaching assistant for the following courses:
 
 \section{Supervision of Graduating Students}\label{sec:supervision-of-graduating-students}
 %
-During the second year of my PhD, I have supervised the following graduating students:
+During the second and third year of my PhD, I have supervised the following graduating students:
 %
 \begin{itemize}
-	\item \textbf{Supervision of the Master Thesis of Riccardo Squarcialupi}
+	\item \textbf{Supervision of the Master Thesis of Riccardo Squarcialupi} (2024)
 	\\School of Engineering and Architecture, University of Bologna, Italy
 	\\``Actively Learning Ontologies from Large Language Models''
 	%
-	\item \textbf{Supervision of the Bachelor Thesis of Michelangelo Ungolo}
+	\item \textbf{Supervision of the Bachelor Thesis of Michelangelo Ungolo} (2024)
 	\\School of Pure and Applied Sciences, University of Urbino, Italy
 	\\``Progettazione e sviluppo di un chatbot basato su LLM a supporto del paziente iperteso''
 	%
-	\item \textbf{Supervision of the Bachelor Thesis of Giulia Costa}
+	\item \textbf{Supervision of the Bachelor Thesis of Giulia Costa} (2024)
 	\\School of Pure and Applied Sciences, University of Urbino, Italy
 	\\``Intelligenza artificiale e salute: addestramento di un LLM per il supporto del paziente iperteso''
+	%
+	\item \textbf{Supervision of the Master Thesis of Martin T. Sterri} (2025)
+	\\Department of Computer science, Electrical engineering and Mathematical sciences, Western Norway University of Applied Sciences;
+	\\Department of Informatics, University of Bergen
+	\\``ExactLearner+LLM: A Tool for Learning EL Ontologies Using Large Language Models''
 \end{itemize}
 
 \section{Courses and School}
@@ -303,44 +350,65 @@ The total amount of proposed CFUs with exam is 20, while the total amount of pro
 	\caption{Courses and Schools attended during the second year of the PhD.}
 	\label{tab:courses-and-school}
 \end{table}
+%
+All the credits required by the PhD program have been recognized by the PhD Commission.
+%
+In particular the 20 CFUs with exam have been recognized, while 4 out of the 6 CFUs without exam have been recognized (the required CFUs are 24 in total).
 
 \section{Papers}\label{sec:papers}
 %
-In this section, I report the papers I have published, accepted, and submitted during the second year of my PhD\@.
+In this section, I report the papers I have published, accepted, and submitted during the third year of my PhD\@.
 %
 \subsection{Published}\label{subsec:published}
 
 \begin{itemize}
-    \item \citefield{DBLP:conf/woa/RafanelliMACO24}{title}~\cite{DBLP:conf/woa/RafanelliMACO24}
+	\item \citefield{DBLP:conf/aime/AguzziMPVM25}{title}~\cite{DBLP:conf/aime/AguzziMPVM25}
+	%
+	\item \citefield{DBLP:journals/kbs/CiattoAMO25}{title}~\cite{DBLP:journals/kbs/CiattoAMO25}
+	%
+	\item \citefield{DBLP:conf/percom/MagniniCKSM25}{title}~\cite{DBLP:conf/percom/MagniniCKSM25}
+	%
+	\item \citefield{DBLP:conf/hc/Aguzzi24}{title}~\cite{DBLP:conf/hc/Aguzzi24}
+	%
+	\item \citefield{DBLP:conf/aequitas/MagniniCCO24}{title}~\cite{DBLP:conf/aequitas/MagniniCCO24}
+
+\end{itemize}
+
+\subsection{Accepted}\label{subsec:accepted}
+
+\begin{itemize}
+	\item \citefield{Magnini2025ActivelyLearning}{title}~\cite{Magnini2025ActivelyLearning}
+	%
+	\item \citefield{Matteini2025DomainSpecificNeSy}{title}~\cite{Matteini2025DomainSpecificNeSy}
+	%
+\end{itemize}
+
+\subsection{In Peer Review}\label{subsec:in-peer-review}
+
+\begin{itemize}
+	\item \citefield{Farahmand2025MedicoAI}{title}~\cite{Farahmand2025MedicoAI}
+	%
+	\item \citefield{Aguzzi2025RAGSLMs}{title}~\cite{Aguzzi2025RAGSLMs}
+	%
+\end{itemize}
+%
+Recently, I received the best paper award at the \textit{4th International Workshop on Telemedicine and E-Health Evolution in the New Era of Social Distancing (TELMED 2025)} for the paper ``Neuro-symbolic AI for Supporting Chronic Disease Diagnosis and Monitoring''~\cite{DBLP:conf/percom/MagniniCKSM25}.
+
+
+The remaining papers are the list of the previous publications.
+%
+\subsection{Previous Publications}\label{subsec:previous-publications}
+
+\begin{itemize}
+	%
+	\item \citefield{DBLP:conf/woa/RafanelliMACO24}{title}~\cite{DBLP:conf/woa/RafanelliMACO24}
     %
 	\item \citefield{DBLP:conf/percom/MontagnaAFPKUM24}{title}~\cite{DBLP:conf/percom/MontagnaAFPKUM24}
 	%
 	\item \citefield{DBLP:conf/dlog/MagniniOS24}{title}~\cite{DBLP:conf/dlog/MagniniOS24}
 	%
 	\item \citefield{DBLP:journals/csur/CiattoSAMO24}{title}~\cite{DBLP:journals/csur/CiattoSAMO24}
-\end{itemize}
-
-\subsection{Accepted}\label{subsec:accepted}
-
-\begin{itemize}
-	\item \citefield{DBLP:conf/aequitas/Magnini24}{title}~\cite{DBLP:conf/aequitas/Magnini24}
-\end{itemize}
-
-\subsection{In Peer Review}\label{subsec:in-peer-review}
-
-\begin{itemize}
-	\item \citefield{DBLP:journals/kbs/CiattoKB24}{title}~\cite{DBLP:journals/kbs/CiattoKB24}
 	%
-	\item \citefield{DBLP:conf/percom/MontagnaAFPKUM24}{title}~\cite{DBLP:conf/percom/MontagnaAFPKUM24}
-	%
-	\item \citefield{DBLP:conf/hc/Magnini24}{title}~\cite{DBLP:conf/hc/Magnini24}
-\end{itemize}
-%
-The remaining papers are the list of the previous publications.
-%
-\subsection{Previous Publications}\label{subsec:previous-publications}
-
-\begin{itemize}
 	\item \citefield{DBLP:journals/aamas/AgiolloRMCO23}{title}~\cite{DBLP:journals/aamas/AgiolloRMCO23}
 	%
 	\item \citefield{DBLP:journals/cmpb/MagniniCCAO23}{title}~\cite{DBLP:journals/cmpb/MagniniCCAO23}
